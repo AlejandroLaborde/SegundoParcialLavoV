@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     SharedPreferences prefs;
     PersonasControler personasControler;
     PersonasView personasView;
+    String nombreShared= "listContactos";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,8 +70,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public boolean onQueryTextChange(String newText) {
-
-
         return false;
     }
 }

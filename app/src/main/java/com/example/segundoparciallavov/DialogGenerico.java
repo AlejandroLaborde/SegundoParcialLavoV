@@ -24,7 +24,6 @@ public class DialogGenerico extends DialogFragment {
         builder.setTitle(this.titulo);
         builder.setMessage(this.mensaje);
 
-
         builder.setPositiveButton("Aceptar",null);
         return builder.create();
 

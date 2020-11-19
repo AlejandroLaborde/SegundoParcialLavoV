@@ -13,7 +13,7 @@ public class PersonasView {
     }
 
     public void actualizaContactos(){
-        String contactos = this.activity.prefs.getString("contactos2","[]");
+        String contactos = this.activity.prefs.getString(this.activity.nombreShared,"[]");
         contacts.setText(contactos);
     }
 

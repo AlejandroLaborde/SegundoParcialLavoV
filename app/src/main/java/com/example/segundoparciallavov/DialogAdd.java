@@ -28,7 +28,6 @@ public class DialogAdd extends DialogFragment {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(this.titulo);
-
         onClickAddDialog onClickAddDialog = new onClickAddDialog( viewAlert, this.activity );
         builder.setView(viewAlert);
         builder.setNeutralButton("Cancelar",null);

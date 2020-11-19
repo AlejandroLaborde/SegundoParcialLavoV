@@ -26,6 +26,9 @@ public class onClickAddDialog implements DialogInterface.OnClickListener {
         if (personasControler.esValidaPersona(p)){
             personasControler.agregarContacto(p);
             personasView.actualizaContactos();
+        }else {
+            DialogGenerico dialog2 = new DialogGenerico("Upss!", "No se pueden agregar datos vacios");
+            dialog2.show(this.activity.getSupportFragmentManager(),"No encontrada");
         }
 
         dialog.dismiss();
